@@ -7,7 +7,6 @@ import todoList from "../../assets/todoList.jpg";
 import woodsmanCafe from "../../assets/woodsmanCafe.jpg";
 
 
-// import { PowerInputSharp } from "@material-ui/icons";
 
 function Projects(props) {
 
