@@ -15,7 +15,6 @@ function Body() {
       method: 'get',
       url: `${API}`
     })
-    console.log(response.data.results);
     setProjects(response.data.results);
   }
 
