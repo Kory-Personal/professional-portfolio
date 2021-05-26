@@ -1,17 +1,67 @@
-import React from "react";
+import {React} from "react";
 
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import EmailIcon from "@material-ui/icons/Email";
+// Dependencies
+import { makeStyles } from '@material-ui/core/styles';
 
-function Header() {
+// Material UI Components
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import IconButton from "@material-ui/core/IconButton";
+import Typography from "@material-ui/core/Typography";
+
+// Material UI icons
+import MenuIcon from "@material-ui/icons/Menu";
+
+function Header(props) {
+
+  const useStyles = makeStyles((theme) => ({
+    root: {
+      flexGrow: 1,
+    },
+    header: {
+      display: "flex",
+      height: "15em",
+      justifyContent: "center",
+      // background: "#1C5D47",
+      // color: "#53DBAE",
+      color: "#81D136",
+      background: "#2B5F82",
+      margin: 0,
+    },
+    hOne: {
+      fontSize: "3em",
+      "@media (min-width: 1200px)": {
+        hOne: {
+          fontSize: "6em",
+          letterSpacing: ".75em",
+          height: ".5em",
+        }
+      }
+    },
+    iconShow: {
+      display: "none",
+      "@media (max-width: 320px)": {
+        iconShow: {
+          display: "block",
+        }
+      }
+    }
+  }));
+
+  const classes = useStyles();
+
+  
   return (
     <>
-      <h1>Kory Jackson</h1>
-      <h3>Chef turned Software Developer</h3>
-      <a href="https://www.linkedin.com/in/kory-jackson-927363164/" aria_hidden="true" ><LinkedInIcon /></a>
-      <a href="https://www.github.com/dirrbick"><GitHubIcon /></a>
-      <a href="https://www.google.com"><EmailIcon/></a>
+      <header className={classes.header}>
+        <div>
+          <IconButton className={classes.iconShow}>
+            <MenuIcon/>
+          </IconButton>
+          <h1 className={classes.hOne}>Kory Jackson</h1>
+          <h3>Chef turned Software Developer</h3>
+        </div>
+      </header>
     </>
   )
 }
