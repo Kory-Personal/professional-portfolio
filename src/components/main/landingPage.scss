@@ -1,0 +1,73 @@
+
+
+main.landingMain {
+            margin: none;
+            display: flex;
+            flex: 1;
+            background: #000;
+            // background-size: cover;
+            // background-repeat: no-repeat;
+            height: 100%;
+    
+
+    .landingDiv {
+        display: flex;
+        flex-direction: column;
+        color: #81D136;
+        text-align: center;
+        font-weight: bold;
+        font-family: "Lucida Console", "Courier New", monospace;
+        line-height: 2em;
+        font-size: xx-large;
+        height: 25%;
+        width: 65%;
+        padding-top: 6em;
+        
+        p {
+            padding-left: 3em;
+        //     border-right: .15em solid orange;
+        //     white-space: nowrap;
+        //     overflow: hidden;
+        //     margin: 0 auto;    
+        //     animation: 
+        //     typing 3.5s steps(40, end),
+        //     blink-caret .75s step-end infinite;
+        // }
+        // @keyframes typing {
+        //     from { width: 0 }
+        //     to { width: 100% }
+        // }
+        
+        // /* The typewriter cursor effect */
+        // @keyframes blink-caret {
+        // from, to { border-color: transparent }
+        // 50% { border-color: orange; }
+        }
+
+        .MuiIconButton-root{
+            display: none;
+        }
+
+        @media(max-width: 414px) {
+            .MuiIconButton-root{
+                display: show;
+                height: 2em;
+                color: #81D136;    
+            }
+        }
+    
+
+    }
+    img {
+        max-width: 30%;
+        height: auto;
+        margin: auto;
+    }
+
+    
+}
+a {
+    color: #81D136;
+    text-decoration: none;
+}
+

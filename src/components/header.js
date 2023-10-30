@@ -4,13 +4,13 @@ import {React} from "react";
 import { makeStyles } from '@material-ui/core/styles';
 
 // Material UI Components
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import IconButton from "@material-ui/core/IconButton";
-import Typography from "@material-ui/core/Typography";
+// import AppBar from "@material-ui/core/AppBar";
+// import Toolbar from "@material-ui/core/Toolbar";
+// import IconButton from "@material-ui/core/IconButton";
+// import Typography from "@material-ui/core/Typography";
 
-// Material UI icons
-import MenuIcon from "@material-ui/icons/Menu";
+// // Material UI icons
+// import MenuIcon from "@material-ui/icons/Menu";
 
 function Header(props) {
 
@@ -38,14 +38,6 @@ function Header(props) {
         }
       }
     },
-    iconShow: {
-      display: "none",
-      "@media (max-width: 320px)": {
-        iconShow: {
-          display: "block",
-        }
-      }
-    }
   }));
 
   const classes = useStyles();
@@ -55,9 +47,6 @@ function Header(props) {
     <>
       <header className={classes.header}>
         <div>
-          <IconButton className={classes.iconShow}>
-            <MenuIcon/>
-          </IconButton>
           <h1 className={classes.hOne}>Kory Jackson</h1>
           <h3>Chef turned Software Developer</h3>
         </div>

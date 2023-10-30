@@ -4,6 +4,7 @@ import scribe from "../../assets/scribe.jpg";
 import notes from "../../assets/notes.jpg";
 import todoList from "../../assets/todoList.jpg";
 import woodsmanCafe from "../../assets/woodsmanCafe.jpg";
+import Footer from "../footer.js";
 import Header from "../header.js";
 import data from "../../db/db.json";
 
@@ -79,6 +80,7 @@ function Projects(props) {
           }  
         </Grid>
       </main>
+      <Footer/>
       </>
   );
   
